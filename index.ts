@@ -113,13 +113,13 @@ function handleMenuOption(choice: string) {
       });
       break;
     case "2":
-      rl.question("Enter todo ID to complete: ", (id) => {
+      rl.question("Enter Task ID to complete: ", (id) => {
         todoList.completeTodo(parseInt(id));
         showMenu();
       });
       break;
     case "3":
-      rl.question("Enter todo ID to remove: ", (id) => {
+      rl.question("Enter Task ID to remove: ", (id) => {
         todoList.removeTodo(parseInt(id));
         showMenu();
       });
