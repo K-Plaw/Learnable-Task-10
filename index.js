@@ -99,13 +99,13 @@ function handleMenuOption(choice) {
             });
             break;
         case "2":
-            rl.question("Enter todo ID to complete: ", function (id) {
+            rl.question("Enter Task ID to complete: ", function (id) {
                 todoList.completeTodo(parseInt(id));
                 showMenu();
             });
             break;
         case "3":
-            rl.question("Enter todo ID to remove: ", function (id) {
+            rl.question("Enter Task ID to remove: ", function (id) {
                 todoList.removeTodo(parseInt(id));
                 showMenu();
             });
